@@ -1,0 +1,30 @@
+---
+title: "class_2019-02-26"
+author: "Shivani Aggarwal"
+date: "February 26, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(janitor)
+library(readxl)
+library(gt)
+
+```
+
+
+```{r cars}
+
+x <- read_xlsx("class_enrollment_summary_by_term_03.06.18.xlsx", skip=3) %>%
+  clean_names()
+  
+
+```
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
